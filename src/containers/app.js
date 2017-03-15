@@ -1,9 +1,10 @@
 import React from 'react'
+import SearchCity from '../components/SearchCity'
 
 const App = props => {
   return (
-    <div>
-      Hello From React!
+    <div className="container">
+      <SearchCity />
     </div>
   )
 }
