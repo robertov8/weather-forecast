@@ -2,7 +2,6 @@ import React from 'react'
 
 class CityListWeatherDescription extends React.Component {
   render () {
-    console.log(this.props.descriptions)
     const description = this.props.descriptions.map((description, key) => {
       return (
         <div key={key} className="citydescription">

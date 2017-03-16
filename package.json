@@ -35,8 +35,10 @@
   "dependencies": {
     "axios": "^0.9.1",
     "babel-preset-stage-1": "^6.1.18",
+    "chartjs": "^0.3.24",
     "lodash": "^3.10.1",
     "react": "^0.14.3",
+    "react-chartjs": "git+https://github.com/venari/react-chartjs.git#chartjs-v2",
     "react-dom": "^0.14.3",
     "react-google-maps": "^4.9.1",
     "react-redux": "^4.0.0",

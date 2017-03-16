@@ -1,5 +1,6 @@
 import React from 'react'
 import CityListWeather from './CityListWeather'
+import CityChart from './CityChart.js'
 
 class CityInfo extends React.Component {
   render () {
@@ -12,6 +13,7 @@ class CityInfo extends React.Component {
           <h2>{city.city.name}</h2>
         </div>
         <div className="col-lg-8">
+          <CityChart listCharts={city.list} />
           <CityListWeather listWeathers={city.list} />
         </div>
       </div>
