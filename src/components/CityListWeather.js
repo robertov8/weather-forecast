@@ -1,4 +1,5 @@
 import React from 'react'
+import CityListWeatherDescription from './CityListWeatherDescription.js'
 
 class CityListWeather extends React.Component {
   render () {
@@ -8,7 +9,7 @@ class CityListWeather extends React.Component {
         <div key={key} className="thumbnail">
         <div className="caption">
           <ul>
-            {/** <img src={`http://openweathermap.org/img/w/${listWeather.weather}.png`} /> **/}
+            <CityListWeatherDescription descriptions={listWeather.weather} />
             <li>Temperatura: {listWeather.main.temp}°C</li>
             <li>Pressão: {listWeather.main.pressure}hPa</li>
             <li>Humidade: {listWeather.main.humidity}%</li>
