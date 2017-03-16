@@ -12,7 +12,7 @@ class CityListWeatherDescription extends React.Component {
     })
 
     return (
-      <div>
+      <div className="CityListWeatherDescription">
         {description}
       </div>
     )

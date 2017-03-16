@@ -2,7 +2,6 @@ import React from 'react'
 import CityListWeatherDescription from './CityListWeatherDescription.js'
 
 class CityListWeather extends React.Component {
-
   render () {
     const {listWeathers} = this.props
 

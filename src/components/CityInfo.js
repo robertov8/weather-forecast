@@ -16,6 +16,7 @@ class CityInfo extends React.Component {
           <CityMap coords={city.city.coord} />
           <CityMedia listMedia={city.list} />
         </div>
+
         <div className="col-lg-8">
           <CityChart listCharts={city.list} />
           <CityListWeather listWeathers={city.list} />

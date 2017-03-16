@@ -2,12 +2,6 @@ import React from 'react'
 import { Line } from 'react-chartjs'
 
 class CityChart extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      list: []
-    }
-  }
   render () {
     const {listCharts} = this.props
 
@@ -61,7 +55,9 @@ class CityChart extends React.Component {
     }
 
     return (
-      <Line data={data} options={options} redraw/>
+      <div className="CityChart">
+        <Line data={data} options={options} redraw/>
+      </div>
     )
   }
 }
