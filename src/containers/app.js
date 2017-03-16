@@ -1,6 +1,6 @@
 import React from 'react'
 import SearchCity from '../components/SearchCity'
-import City from '../components/CityInfo'
+import CityInfo from '../components/CityInfo'
 
 class App extends React.Component {
   constructor (props) {
@@ -16,11 +16,10 @@ class App extends React.Component {
   }
 
   render () {
-    console.log(this.state.city)
     return (
       <div className="container">
         <SearchCity updateCity={this.updateCity} />
-        <CityInfo />
+        <CityInfo city={this.state.city} />
       </div>
     )
   }
