@@ -1,4 +1,5 @@
 import React from 'react'
+import Forecast5 from '../services/Forecast5'
 
 class SearchCity extends React.Component {
   constructor (props) {
@@ -8,6 +9,10 @@ class SearchCity extends React.Component {
 
   handleSubmit (e) {
     e.preventDefault()
+
+    Forecast5.getByCity(this.refs.city.value).then((response) => {
+      this.props.updateCity(response.data)
+    })
   }
 
   render () {
@@ -35,6 +40,10 @@ class SearchCity extends React.Component {
       </div>
     )
   }
+}
+
+SearchCity.propTypes = {
+  updateCity: React.PropTypes.func.isRequired
 }
 
 export default SearchCity
