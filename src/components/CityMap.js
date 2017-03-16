@@ -1,8 +1,14 @@
 import React from 'react'
 import {Gmaps, Marker} from 'react-gmaps'
-
+/**
+ * params: dados para consulta da api
+ * @type {Object}
+ */
 const params = {v: '3.exp', key: 'AIzaSyCvxigLlhYoFQW0XghFb1w9Wpw9yWE3jUQ'}
 
+/**
+ * Component: Map gerado com a lib react-gmaps
+ */
 const CityMap = React.createClass({
 
   onMapCreated (map) {
@@ -15,10 +21,16 @@ const CityMap = React.createClass({
     console.log('onDragEnd', e)
   },
 
+  /**
+   * Retorna o mapa com um marcador
+   * CityListWeatherDescription concatenados com a função map
+   * @type {JSX}
+   */
   render () {
+    /**
+     *  destructuring: desestrutura o objeto e atribuindo
+     */
     const {coords} = this.props
-
-    console.log()
 
     return (
       <Gmaps

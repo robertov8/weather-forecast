@@ -8,6 +8,9 @@ import reducers from './reducers'
 
 import styles from '../style/style.scss'
 
+/**
+* Ponto de entrada
+*/
 ReactDOM.render(
   <Provider store={createStore}>
     <App />

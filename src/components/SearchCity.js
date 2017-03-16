@@ -1,12 +1,25 @@
 import React from 'react'
 import Forecast5 from '../services/Forecast5'
 
+/**
+ * Component: Executa uma consulta e retorna o valor para App.js
+ */
 class SearchCity extends React.Component {
+   /**
+   * Inicia o estado do Component
+   * handleSubmit: realizando o auto bind na class
+   */
   constructor (props) {
     super(props)
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
+  /**
+   * Atualiza o estado do App quando o form for enviado
+   * Chama o serviço Forecast5 passando o campo city e
+   * e depois enviado o resultado da consulta para a
+   * metodo updateCity que atualiza o estado city
+   */
   handleSubmit (e) {
     e.preventDefault()
 
@@ -15,6 +28,10 @@ class SearchCity extends React.Component {
     })
   }
 
+  /**
+   * Retorna o JSX de SearchCity
+   * @type {JSX}
+   */
   render () {
     return (
       <div className="jumbotron">
@@ -42,6 +59,11 @@ class SearchCity extends React.Component {
   }
 }
 
+/**
+ * Dfine que o updateCity seja obrigadorio
+ * para o Component SearchCity
+ * @type {Object}
+ */
 SearchCity.propTypes = {
   updateCity: React.PropTypes.func.isRequired
 }

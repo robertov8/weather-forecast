@@ -1,5 +1,8 @@
 import React from 'react'
 
+/**
+ * Component: Lista de todos os resultados de descriptions
+ */
 class CityListWeatherDescription extends React.Component {
   render () {
     const description = this.props.descriptions.map((description, key) => {
@@ -10,7 +13,11 @@ class CityListWeatherDescription extends React.Component {
         </div>
       )
     })
-
+    /**
+     * Lista com todos Components
+     * CityListWeatherDescription concatenados com a função map
+     * @type {JSX}
+     */
     return (
       <div className="CityListWeatherDescription">
         {description}
