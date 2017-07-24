@@ -7,7 +7,7 @@ Um revolucionário App de consulta de clima. :sunglasses:
 
 ## Características
 
-* **eslint**  - Ferramenta para identificar e reportar padrões código  ECMAScript/JavaScript 
+* **eslint**  - Ferramenta para identificar e reportar padrões código  ECMAScript/JavaScript
 * **axios** - Cliente HTTP para requisições de API
 * **chartjs** - biblioteca para gráficos
 * **react-chartjs** - Criar components chartjs
